@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
+<?xml version="1.0" encoding="UTF-8"?> <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.vaadin.addon</groupId>
     <artifactId>visjs-addon</artifactId>
-    <version>2.0.0.3-SNAPSHOT</version>
+    <version>2.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <properties>
         <vaadin.version>8.10.3</vaadin.version>
@@ -26,18 +25,18 @@
 
 
     <scm>
-        <url>https://github.com/watho/visjs</url>
-        <connection>scm:git:https://github.com/watho/visjs</connection>
-        <developerConnection>scm:git:https://github.com/watho/visjs</developerConnection>
+        <url>https://github.com/DALDEI/visjs</url>
+        <connection>scm:git:https://github.com/DALDEI/visjs</connection>
+        <developerConnection>scm:git:https://github.com/DALDEI/visjs</developerConnection>
         <tag>Fork of the Visjs add-on for Vaadin</tag>
     </scm>
 
     <developers>
         <developer>
-            <id>sameeraroshan</id>
-            <name>Sameera Roshan</name>
-            <email>sameeraroshanuom@gmail.com</email>
-            <url>http://vaadin.com/web/sameeraroshan</url>
+            <id>DALDEI</id>
+            <name>David Lee</name>
+            <email>dlee@calldei.com</email>
+            <url>http://vaadin.com/web/daldei</url>
             <!--<organization>Vaadin Ltd</organization>-->
             <!--<organizationUrl>http://vaadin.com/</organizationUrl>-->
             <roles>
@@ -63,7 +62,7 @@
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/trobar/visjs/issues</url>
+        <url>https://github.com/DALDEI/visjs/issues</url>
     </issueManagement>
     <licenses>
         <license>
@@ -160,5 +159,5 @@
     </build>
 
     <name>VisJs-Vaadin-Addon</name>
-    <url>https://github.com/watho/visjs</url>
+    <url>https://github.com/DALDEI/visjs</url>
 </project>
