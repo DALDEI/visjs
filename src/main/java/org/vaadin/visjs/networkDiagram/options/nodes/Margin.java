@@ -5,35 +5,51 @@ package org.vaadin.visjs.networkDiagram.options.nodes;
  */
 
 
-public class HeightConstraint {
-    private int minimum;
-    private VAlign valign = VAlign.middle;
-    
-    public HeightConstraint(){
+public class Margin {
+    private int top;
+		private int right;
+		private int bottom;
+		private int left;
+
+
+    public Margin(){
     	
     }
     
-    public HeightConstraint(int minimum,VAlign valign) {
-    	this.minimum=minimum;
-    	this.valign=valign;
+    public Margin(int top,int right,int bottom, int left)  {
+    	this.top = top ;
+    	this.bottom = bottom;
+    	this.right = right ;
+    	this.left = left;
     }
-    
-	public int getMinimum() {
-		return minimum;
+
+    public int getTop() {
+    	return top ;
+		}
+	public int getBottom() {
+		return bottom ;
 	}
-	public void setMinimum(int minimum) {
-		this.minimum = minimum;
+
+	public int getLeft() {
+		return left ;
 	}
-	public VAlign  getVAlign() {
-		return valign;
+	public int getRight() {
+		return right ;
 	}
-	public void setVAlign(org.vaadin.visjs.networkDiagram.options.nodes.HeightConstraint.VAlign valign) {
-		this.valign = valign;
+
+	public void setTop(int top) {
+		this.top = top ;
 	}
-	public static enum VAlign {
-    	top,
-		 middle,
-		 bottom
+	public void setBottom(int bottom) {
+		this.bottom = bottom;
 	}
-    
+
+	public void setLeft(int left) {
+		this.left = left;
+	}
+	public void setRight(int right) {
+		this.right = right;
+	}
+
+
 }

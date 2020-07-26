@@ -20,7 +20,6 @@ public class Nodes {
   private Fixed fixed = new Fixed();
   private Font font;
   // group
-  private boolean heightConstraint = false;
   private boolean hidden = false;
   private Icon icon;
   private String image;
@@ -38,9 +37,13 @@ public class Nodes {
   private int size = 25;
   private String title = null;
   private String value = null;
-  private WidthConstraint widthConstraint;
+  private WidthConstraint widthConstraint = null ;
   private Integer x = null;
   private Integer y = null;
+  private HeightConstraint heightConstraint = null ;
+  private Margin margin = null ;
+
+
 
 
 
@@ -96,13 +99,6 @@ public class Nodes {
     this.font = font;
   }
 
-  public boolean isHeightConstraint() {
-    return heightConstraint;
-  }
-
-  public void setHeightConstraint(final boolean heightConstraint) {
-    this.heightConstraint = heightConstraint;
-  }
 
   public boolean isHidden() {
     return hidden;
@@ -224,6 +220,16 @@ public class Nodes {
     this.widthConstraint = widthConstraint;
   }
 
+  public HeightConstraint getHeightConstraint() {
+    return heightConstraint;
+  }
+
+  public void setHeightConstraint(final HeightConstraint heigthConstraint) {
+    this.heightConstraint = heightConstraint;
+  }
+
+
+
   public Integer getX() {
     return x;
   }
@@ -270,6 +276,14 @@ public class Nodes {
 
   public void setFixedY(final boolean fixedY) {
     getFixed().setY(fixedY);
+  }
+
+  public Margin getMargin() {
+    return margin;
+  }
+
+  public void setMargin(final Margin margin) {
+    this.margin = margin;
   }
 
 

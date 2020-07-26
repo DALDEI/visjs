@@ -10,12 +10,12 @@ public class HierarchicalLayout {
     private int levelSeparation = 100;
     private int nodeSpacing = 100;
     private Direction direction = Direction.UD;
-    private LayoutStyle layout = LayoutStyle.hubsize;
     private int treeSpacing=200;
     private boolean blockShifting=true;
     private boolean edgeMinimization=true;
     private boolean  parentCentralization=true;
-      
+    private SortMethod sortMethod = SortMethod.directed ;
+
     
     public int getTreeSpacing() {
 		return treeSpacing;
@@ -81,12 +81,12 @@ public class HierarchicalLayout {
         this.direction = direction;
     }
 
-    public LayoutStyle getLayout() {
-        return layout;
+    public SortMethod getSortMethod() {
+        return sortMethod;
     }
 
-    public void setLayout(LayoutStyle layout) {
-        this.layout = layout;
+    public void setSortMethod(SortMethod sortMethod) {
+        this.sortMethod = sortMethod;
     }
 
     public static enum Direction {
@@ -96,8 +96,8 @@ public class HierarchicalLayout {
         RL;
     }
 
-    public static enum  LayoutStyle{
+    public static enum  SortMethod {
         hubsize,
-        direction;
+      directed;
     }
 }

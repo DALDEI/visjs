@@ -13,6 +13,7 @@ public class Smooth {
 	  private boolean enabled=true;
 	  private Type type=Type.dynamic;
 	  private double roundness=0.5;
+	  private ForceDirection forceDirection;
       
       
       public boolean isEnabled() {
@@ -28,8 +29,6 @@ public class Smooth {
 	public Type getType() {
 		return type;
 	}
-
-
 	public void setType(Type type) {
 		this.type = type;
 	}
@@ -38,11 +37,18 @@ public class Smooth {
 	public double getRoundness() {
 		return roundness;
 	}
-
-
 	public void setRoundness(double roundness) {
 		this.roundness = roundness;
 	}
+
+
+	public ForceDirection getForceDirection() {
+		return forceDirection;
+	}
+	public void setForceDirection(ForceDirection forceDirection){
+      	this.forceDirection = forceDirection ;
+	}
+
 
 
 	public static enum Type {
@@ -67,6 +73,13 @@ public class Smooth {
 	        @SerializedName("discrete")
 	        discrete,
 	}
-      
+
+	public static enum ForceDirection {
+      	horizontal,
+		  	vertical,
+		   none
+
+
+	}
 
 }
