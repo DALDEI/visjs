@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.vaadin.addon</groupId>
+	<artifactId>visjs-4-addon-root</artifactId>
+	<packaging>pom</packaging>
+	<version>2.0.1-SNAPSHOT</version>
+        <name>Visjs 4.21 Vaadin Add-on Updated</name>
+
+	<scm>
+		<url>https://github.com/DALDEI/visjs</url>
+		<connection>scm:git:https://github.com/DALDEI/visjs</connection>
+		<developerConnection>scm:git:https://github.com/DALDEI/visjs</developerConnection>
+		<tag>Fork of the Visjs add-on for Vaadin</tag>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>DALDEI</id>
+			<name>David Lee</name>
+			<email>dlee@calldei.com</email>
+			<url>http://vaadin.com/web/daldei</url>
+			<!--<organization>Vaadin Ltd</organization>-->
+			<!--<organizationUrl>http://vaadin.com/</organizationUrl>-->
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+				<role>team manager</role>
+			</roles>
+			<timezone>5.30</timezone>
+		</developer>
+		<developer>
+			<id>martinprause</id>
+			<name>Martin Prause</name>
+			<email>mt.prause@googlemail.com</email>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>1.00</timezone>
+		</developer>
+	</developers>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/DALDEI/visjs/issues</url>
+	</issueManagement>
+	<prerequisites>
+		<maven>3</maven>
+	</prerequisites>
+
+	<modules>
+		<module>visjs-4-addon-addon</module>
+		<module>visjs-4-addon-demo</module>
+	</modules>
+
+	<profiles>
+		<profile>
+			<!-- Vaadin pre-release repositories -->
+			<id>vaadin-prerelease</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			
+			<repositories>
+				<repository>
+					<id>vaadin-prereleases</id>
+					<url>https://maven.vaadin.com/vaadin-prereleases</url>
+				</repository>
+				<repository>
+					<id>vaadin-snapshots</id>
+					<url>https://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>vaadin-prereleases</id>
+					<url>https://maven.vaadin.com/vaadin-prereleases</url>
+				</pluginRepository>
+				<pluginRepository>
+					<id>vaadin-snapshots</id>
+					<url>https://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+
+</project>
