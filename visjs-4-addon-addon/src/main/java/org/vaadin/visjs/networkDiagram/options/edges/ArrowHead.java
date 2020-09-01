@@ -6,14 +6,14 @@ package org.vaadin.visjs.networkDiagram.options.edges;
 
 public class ArrowHead {
   private boolean enabled = false;
-  private int scaleFactor = 1;
+  private float scaleFactor = 1.0f;
   private Arrows.Type type = Arrows.Type.arrow;
 
   public ArrowHead() {
     enabled = true;
   }
 
-  public ArrowHead(final int scaleFactor, final Arrows.Type type) {
+  public ArrowHead(final float scaleFactor, final Arrows.Type type) {
     enabled = true;
     this.scaleFactor = scaleFactor;
     this.type = type;
@@ -28,11 +28,11 @@ public class ArrowHead {
     this.enabled = enabled;
   }
 
-  public int getScaleFactor() {
+  public float getScaleFactor() {
     return scaleFactor;
   }
 
-  public void setScaleFactor(final int scaleFactor) {
+  public void setScaleFactor(final float scaleFactor) {
     this.scaleFactor = scaleFactor;
   }
 
